@@ -1,0 +1,76 @@
+@import 'fonts'
+
+$ColorRed: #ff2d2d
+
+body
+   font-family: "Open Sans Regular"
+   font-size: 16px
+   color: #000
+
+.button
+   height: 55px
+   width: 228px
+   border: none
+   border-radius: 5px
+   transition: all .3s
+   background-color: $ColorRed
+
+   &:hover
+      transform: scale(1.2)
+      box-shadow: 0 0 10px $ColorRed
+
+// Шапка
+.header
+   background-color: #f6f2f2
+   padding-top: 20px
+
+   .header-navbar
+      background-color: #313030
+      height: 90px
+
+      a
+         height: 100%
+         padding: 24px
+         text-decoration: none
+         color: #ffffff
+         font-family: "Open Sans Bold"
+         text-transform: uppercase
+         transition: all .5s
+
+         &:hover
+            background-color: $ColorRed
+   
+   #header-navbar__a_active
+      background-color: $ColorRed
+
+// Главный экран
+.main
+   background-color: #f6f2f2
+   padding-top: 100px
+
+   h1
+      text-transform: uppercase
+      font-family: "Open Sans Extrabold"
+      font-size: 60px
+   
+   p
+      width: 90%
+      opacity: 0.7
+      color: #000000
+      line-height: 28px
+      margin-top: 36px
+      margin-bottom: 60px
+
+   .button
+      color: #ffffff
+      font-family: "Open Sans Bold"
+      font-size: 18px
+      line-height: 34.06px
+
+   .main-video
+      width: 551px
+      height: 356px
+      background-color: rgba(0, 0, 0, .2)
+      box-shadow: -3px -8px 30px rgba(0, 0, 0, .2)
+      cursor: pointer
+
