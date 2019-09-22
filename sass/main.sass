@@ -16,6 +16,7 @@ body
    border-radius: 5px
    transition: all .3s
    background-color: $ColorRed
+   color: #fff
 
    &:hover
       transform: scale(1.2)
@@ -25,6 +26,23 @@ body
    border-radius: 5px
    border: 3px solid $ColorRed
    background: transparent
+   color: #000
+
+.input
+   border: none
+   border-radius: 5px
+   height: 55px
+   width: 500px
+   padding: 0 30px
+   background-color: #e5e5e5
+   transition: all .3s
+
+   &, &:hover, &:focus
+      outline: none
+
+   &:focus, &:hover
+      background-color: #fff
+      box-shadow: 0 0 10px #e5e5e5
 
 h3
    font-size: 42px
@@ -42,7 +60,7 @@ h3
    display: inline-block
    background-color: $ColorRed
    height: 3px
-
+   width: 10%
 // Шапка
 .header
    background-color: #f6f2f2
@@ -174,9 +192,25 @@ h3
       .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover
          border-color: transparent transparent transparent
 
-   #all
-      .project
-         background-color: black
+      #all
+         .project
+            background-color: #5B1A1A
+
+      #print-template
+         .project
+            background-color: #8522B8
+      
+      #web-template
+         .project
+            background-color: #85B8B8
+      
+      #user-interface
+         .project
+            background-color: #41A041
+      
+      #mock-up
+         .project
+            background-color: #A04141
 
 .our-team
    margin-bottom: 100px
@@ -185,13 +219,15 @@ h3
       width: 50%
    
    .line
-      width: 10%
       margin-bottom: 60px
    
    .avatar
+      display: block
       width: 321px
       height: 458px
       background-color: #f5f0dd
+      background: url(../img/people/big-avatar.jpg) center no-repeat
+      background-size: cover
    
    .text-decr-man
       .name
@@ -225,6 +261,8 @@ h3
          height: 200px
          background-color: #f5f0dd
          cursor: pointer
+         background: url(../img/people/min-avatar.jpg) center no-repeat
+         background-size: cover
 
       &__name
          display: flex
@@ -240,9 +278,8 @@ h3
 
 // Поиск работ
 .search-projects
-   // background-color: #f5f0dd
    background-color: #2C2C2C
-   padding: 140px 0
+   padding: 100px 0 140px 0
 
    .title
       font-size: 42px
@@ -252,3 +289,85 @@ h3
    
    .sub-text
       color: rgba(255, 255, 255, 0.8)
+      display: inline-block
+      margin: 20px 0 40px 0
+   
+   .input
+      margin-right: 15px
+   
+   .button
+      text-transform: uppercase
+      font-family: 'Open Sans Bold'
+
+// Написать письмл
+.message
+   padding: 100px 0
+
+   .line
+      display: inline-block
+      margin-bottom: 50px
+
+   .input
+      width: 300px
+      margin-bottom: 40px
+
+      &-o
+         margin-left: -5px
+         float: right
+
+      &:hover, &:focus
+         background-color: #e5e5e5
+   
+   .textarea
+      border: none
+      border-radius: 5px
+      height: 255px
+      width: 100%
+      padding: 25px 30px 
+      margin-bottom: 40px
+      background-color: #e5e5e5
+
+      &:hover, &:focus
+         background-color: #e5e5e5
+         outline: none
+   
+   .button
+      text-transform: uppercase
+      display: inline-block
+      width: 100%
+
+      &:hover
+         transform: scale(1.05)
+   
+   .connect
+      display: inline-block
+      max-width: 100%
+      height: 100%
+      background-color: #2d2d2d
+      padding: 0 60px
+
+      &__text
+         display: inline-block
+         margin: 45% 0
+         color: #b8b8b8
+      
+      .title
+         font-size: 18px
+         text-transform: uppercase
+      
+      .title, .address, .email, .tel,
+         display: inline-block
+         margin: 5px 0
+
+      a
+         color: #b8b8b8
+
+// Футер
+.footer
+   background-color: #313030
+   padding: 20px
+   color: #b8b8b8
+
+   img
+      margin: 0 5px
+      cursor: pointer

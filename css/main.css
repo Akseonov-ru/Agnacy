@@ -48,6 +48,7 @@ body {
   -webkit-transition: all .3s;
   transition: all .3s;
   background-color: #ff2d2d;
+  color: #fff;
 }
 
 .button:hover {
@@ -61,6 +62,28 @@ body {
   border-radius: 5px;
   border: 3px solid #ff2d2d;
   background: transparent;
+  color: #000;
+}
+
+.input {
+  border: none;
+  border-radius: 5px;
+  height: 55px;
+  width: 500px;
+  padding: 0 30px;
+  background-color: #e5e5e5;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.input, .input:hover, .input:focus {
+  outline: none;
+}
+
+.input:focus, .input:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px #e5e5e5;
+          box-shadow: 0 0 10px #e5e5e5;
 }
 
 h3 {
@@ -81,6 +104,7 @@ h3 {
   display: inline-block;
   background-color: #ff2d2d;
   height: 3px;
+  width: 10%;
 }
 
 .header {
@@ -233,8 +257,24 @@ h3 {
   border-color: transparent transparent transparent;
 }
 
-.my-productions #all > .project {
-  background-color: black;
+.my-productions .container #all .project {
+  background-color: #5B1A1A;
+}
+
+.my-productions .container #print-template .project {
+  background-color: #8522B8;
+}
+
+.my-productions .container #web-template .project {
+  background-color: #85B8B8;
+}
+
+.my-productions .container #user-interface .project {
+  background-color: #41A041;
+}
+
+.my-productions .container #mock-up .project {
+  background-color: #A04141;
 }
 
 .our-team {
@@ -246,14 +286,16 @@ h3 {
 }
 
 .our-team .line {
-  width: 10%;
   margin-bottom: 60px;
 }
 
 .our-team .avatar {
+  display: block;
   width: 321px;
   height: 458px;
   background-color: #f5f0dd;
+  background: url(../img/people/big-avatar.jpg) center no-repeat;
+  background-size: cover;
 }
 
 .our-team .text-decr-man .name {
@@ -290,6 +332,8 @@ h3 {
   height: 200px;
   background-color: #f5f0dd;
   cursor: pointer;
+  background: url(../img/people/min-avatar.jpg) center no-repeat;
+  background-size: cover;
 }
 
 .our-team .ofther-people__name {
@@ -311,7 +355,7 @@ h3 {
 
 .search-projects {
   background-color: #2C2C2C;
-  padding: 140px 0;
+  padding: 100px 0 140px 0;
 }
 
 .search-projects .title {
@@ -323,4 +367,103 @@ h3 {
 
 .search-projects .sub-text {
   color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  margin: 20px 0 40px 0;
+}
+
+.search-projects .input {
+  margin-right: 15px;
+}
+
+.search-projects .button {
+  text-transform: uppercase;
+  font-family: 'Open Sans Bold';
+}
+
+.message {
+  padding: 100px 0;
+}
+
+.message .line {
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.message .input {
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+.message .input-o {
+  margin-left: -5px;
+  float: right;
+}
+
+.message .input:hover, .message .input:focus {
+  background-color: #e5e5e5;
+}
+
+.message .textarea {
+  border: none;
+  border-radius: 5px;
+  height: 255px;
+  width: 100%;
+  padding: 25px 30px;
+  margin-bottom: 40px;
+  background-color: #e5e5e5;
+}
+
+.message .textarea:hover, .message .textarea:focus {
+  background-color: #e5e5e5;
+  outline: none;
+}
+
+.message .button {
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
+}
+
+.message .button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.message .connect {
+  display: inline-block;
+  max-width: 100%;
+  height: 100%;
+  background-color: #2d2d2d;
+  padding: 0 60px;
+}
+
+.message .connect__text {
+  display: inline-block;
+  margin: 45% 0;
+  color: #b8b8b8;
+}
+
+.message .connect .title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.message .connect .title, .message .connect .address, .message .connect .email, .message .connect .tel {
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.message .connect a {
+  color: #b8b8b8;
+}
+
+.footer {
+  background-color: #313030;
+  padding: 20px;
+  color: #b8b8b8;
+}
+
+.footer img {
+  margin: 0 5px;
+  cursor: pointer;
 }
