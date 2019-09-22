@@ -34,7 +34,8 @@
 }
 
 body {
-  font-family: "Open Sans Regular";
+  font-family: "Open Sans";
+  font-weight: 400;
   font-size: 16px;
   color: #000;
 }
@@ -62,6 +63,26 @@ body {
   background: transparent;
 }
 
+h3 {
+  font-size: 42px;
+  font-family: 'Open Sans Bold';
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+}
+
+.sub-text {
+  font-size: 16px;
+  font-family: 'Open Sans Regular';
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 28px;
+}
+
+.line {
+  display: inline-block;
+  background-color: #ff2d2d;
+  height: 3px;
+}
+
 .header {
   background-color: #f6f2f2;
   padding-top: 20px;
@@ -77,7 +98,8 @@ body {
   padding: 24px;
   text-decoration: none;
   color: #ffffff;
-  font-family: "Open Sans Bold";
+  font-family: "Open Sans";
+  font-weight: bold;
   text-transform: uppercase;
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -98,7 +120,8 @@ body {
 
 .main h1 {
   text-transform: uppercase;
-  font-family: "Open Sans Extrabold";
+  font-family: "Open Sans";
+  font-weight: 800;
   font-size: 60px;
 }
 
@@ -113,7 +136,8 @@ body {
 
 .main .button {
   color: #ffffff;
-  font-family: "Open Sans Bold";
+  font-family: "Open Sans";
+  font-weight: bold;
   font-size: 18px;
   line-height: 34.06px;
 }
@@ -127,13 +151,15 @@ body {
   cursor: pointer;
 }
 
-.features {
+.features .container {
   padding: 100px 0;
+  border-bottom: 2px solid #ececec;
 }
 
 .features .h2 {
   display: inline-block;
-  font-family: 'Open Sans Bold';
+  font-family: 'Open Sans';
+  font-weight: bold;
   font-size: 42px;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.7);
@@ -143,4 +169,158 @@ body {
   color: black;
   line-height: 1.75;
   margin: 50px 0;
+}
+
+.features .descr {
+  opacity: .7;
+  margin-bottom: 50px;
+}
+
+.features img {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.my-productions .container {
+  padding: 100px 0 140px 0;
+}
+
+.my-productions .container .sub-text {
+  width: 50%;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 27px;
+}
+
+.my-productions .container .line {
+  width: 13%;
+  margin-bottom: 60px;
+}
+
+.my-productions .container .tab-content {
+  margin-top: 40px;
+}
+
+.my-productions .container .project {
+  height: 200px;
+  width: 200px;
+  background-color: #f5f0dd;
+  margin-bottom: 20px;
+}
+
+.my-productions .container .nav-tabs {
+  border: none;
+}
+
+.my-productions .container .nav-tabs .nav-link {
+  text-transform: uppercase;
+  opacity: 0.7;
+  color: #000000;
+  font-family: 'Open Sans Semibold';
+  font-size: 22px;
+  letter-spacing: 0.22px;
+  border: none;
+}
+
+.my-productions .container .nav-tabs .nav-item.show .nav-link, .my-productions .container .nav-tabs .nav-link.active {
+  color: #ff2d2d;
+  background-color: transparent;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.my-productions .container .nav-tabs .nav-link:focus, .my-productions .container .nav-tabs .nav-link:hover {
+  border-color: transparent transparent transparent;
+}
+
+.my-productions #all > .project {
+  background-color: black;
+}
+
+.our-team {
+  margin-bottom: 100px;
+}
+
+.our-team .sub-text {
+  width: 50%;
+}
+
+.our-team .line {
+  width: 10%;
+  margin-bottom: 60px;
+}
+
+.our-team .avatar {
+  width: 321px;
+  height: 458px;
+  background-color: #f5f0dd;
+}
+
+.our-team .text-decr-man .name {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: 'Open Sans Semibold';
+}
+
+.our-team .text-decr-man .sub-text {
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.our-team .social ul {
+  margin: 0;
+  padding: 0;
+}
+
+.our-team .social ul li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 30px;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.our-team .social ul li a {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.our-team .ofther-people .avatar-mini {
+  height: 200px;
+  background-color: #f5f0dd;
+  cursor: pointer;
+}
+
+.our-team .ofther-people__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.search-projects {
+  background-color: #2C2C2C;
+  padding: 140px 0;
+}
+
+.search-projects .title {
+  font-size: 42px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Open Sans Bold';
+  text-align: center;
+}
+
+.search-projects .sub-text {
+  color: rgba(255, 255, 255, 0.8);
 }
