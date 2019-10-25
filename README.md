@@ -9,12 +9,13 @@
 - No problems
 
 📌 **Источник**
-Загуглить (google.com) (нашёл на левом сайте)
+[Загуглить](google.com) (нашёл на левом сайте)
 
 ![Часть 1](https://sun9-3.userapi.com/c855536/v855536579/13bea8/PwbT1IP36KA.jpg)
-![Часть 2](https://sun9-56.userapi.com/c855536/v855536579/13beb1/HEEWp0-L5gA.jpg)
+![Часть 2](https://sun9-20.userapi.com/c856032/v856032677/132f95/M-THYNuGsnE.jpg)
 ![Часть 3](https://sun9-68.userapi.com/c855536/v855536579/13beba/iEjptygr5nU.jpg)
-![Часть 4](https://sun9-20.userapi.com/c856032/v856032677/132f95/M-THYNuGsnE.jpg)
+![Часть 4](https://sun9-29.userapi.com/c855536/v855536579/13bec3/MSJ9ZIcWFmA.jpg)
+
 ---
 **Автор Аксёнов Руслан**   
 [Аксёнов Руслан (ВК)](https://vk.com/akseonov_ru)  
