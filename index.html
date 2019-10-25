@@ -12,8 +12,7 @@
    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-   
-   <!-- Шапка -->
+      <!-- Шапка -->
    <header class="header">
       <div class="container">
          <div class="row justify-content-center">
@@ -328,7 +327,9 @@
          <!-- /.row -->
          <div class="row">
             <div class="col-lg-4">
-               <div class="avatar"></div>
+               <div class="avatar">
+                  <img src="img/people/big-avatar-man.jpg" alt="">
+               </div>
             </div>
             <div class="
             col-lg-8 
@@ -383,6 +384,7 @@
 
    <!-- Search -->
    <div class="search-projects">
+      <div class="bg-search"></div>
       <div class="container">
          <div class="row d-flex justify-content-center">
             <div class="col-lg-10 d-flex flex-column align-items-center justify-content-center">
@@ -468,23 +470,6 @@
    <script>
       $(function () {
          $('#myTab li:last-child a').tab('show');
-      });
-   </script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-   <script>
-      $(function () {
-         $('a[href*=#]').click(function () {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-               && location.hostname == this.hostname) {
-               var $target = $(this.hash);
-               $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
-               if ($target.length) {
-                  var targetOffset = $target.offset().top;
-                  $('html,body').animate({ scrollTop: targetOffset }, 500);//скорость прокрутки
-                  return false;
-               }
-            }
-         });
       });
    </script>
    <script src="js/main.js"></script>

@@ -38,6 +38,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #000;
+  overflow-x: hidden;
 }
 
 .button {
@@ -299,8 +300,12 @@ textarea {
   width: 321px;
   height: 458px;
   background-color: #f5f0dd;
-  background: url(../img/people/big-avatar.jpg) center no-repeat;
-  background-size: cover;
+  overlay: none;
+}
+
+.our-team .avatar img {
+  height: 100%;
+  width: 100%;
 }
 
 .our-team .text-decr-man .name {
@@ -333,6 +338,10 @@ textarea {
   color: rgba(0, 0, 0, 0.8);
 }
 
+.our-team .social ul li a::hover {
+  font-family: 'Open Sans Bold';
+}
+
 .our-team .ofther-people .avatar-mini {
   height: 200px;
   background-color: #f5f0dd;
@@ -359,8 +368,27 @@ textarea {
 }
 
 .search-projects {
-  background-color: #2C2C2C;
+  position: relative;
+  z-index: 2;
   padding: 100px 0 140px 0;
+}
+
+.search-projects .container {
+  position: relative;
+  z-index: 2;
+}
+
+.search-projects .bg-search {
+  position: absolute;
+  z-index: 1;
+  background: #2C2C2C url("../img/bg-search.jpg") no-repeat center;
+  background-size: cover;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  left: -10px;
+  right: -10px;
+  top: -10px;
+  bottom: -10px;
 }
 
 .search-projects .title {
