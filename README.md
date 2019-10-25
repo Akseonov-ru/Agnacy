@@ -1,5 +1,5 @@
 # Agnacy
- Agnacy - studia web-desing.
+ Agnacy - студия веб-дизайна.
 
 ---
 ⌚ **Затратил времени** - ~15 ч.
