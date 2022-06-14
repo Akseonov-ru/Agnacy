@@ -14,24 +14,33 @@ body
    height: 55px
    width: 228px
    border: none
-   border-radius: 5px
+   border-radius: 12px
    transition: all .3s
    background-color: $ColorRed
    color: #fff
+   font-weight: 700 !important
 
    &:hover
       transform: scale(1.2)
       box-shadow: 0 0 10px $ColorRed
+   &:focus
+      outline: none
+
+.mini-button
+   background: transparent
+   border: none
+   &:focus
+      outline: none
 
 .button-o
-   border-radius: 5px
+   border-radius: 12px
    border: 3px solid $ColorRed
    background: transparent
    color: #000
 
 .input
    border: none
-   border-radius: 5px
+   border-radius: 12px
    height: 55px
    width: 500px
    padding: 0 30px
@@ -49,7 +58,6 @@ h3
    font-size: 42px
    font-family: 'Open Sans Bold'
    color: rgba(0, 0, 0, 0.8)
-   text-transform: uppercase
 
 .sub-text
    font-size: 16px
@@ -70,9 +78,22 @@ textarea
    background-color: #f6f2f2
    padding-top: 20px
 
+   @media screen and (max-width: 1200px)
+      padding-top: 0
+
+      .container
+         padding: 0
+
    .header-navbar
       background-color: #313030
       height: 90px
+
+      @media screen and (max-width: 1200px)
+         height: 80px
+         display: flex
+         justify-content: center
+         align-items: stretch
+         width: 100%
 
       a
          height: 100%
@@ -81,8 +102,11 @@ textarea
          color: #ffffff
          font-family: "Open Sans"
          font-weight: bold
-         text-transform: uppercase
+         
          transition: all .5s
+
+         @media screen and (max-width: 1200px)
+            padding: 16зч
 
          &:hover
             background-color: $ColorRed
@@ -95,12 +119,18 @@ textarea
    background-color: #f6f2f2
    padding: 100px 0
 
-   h1
-      text-transform: uppercase
+   @media screen and (max-width: 1200px)
+      padding: 60px 0 80px
+
+   h1      
       font-family: "Open Sans"
       font-weight: 800
       font-size: 60px
-   
+
+      @media screen and (max-width: 1200px)
+         font-size: 50px
+         text-align: center
+         
    p
       width: 90%
       opacity: 0.7
@@ -109,6 +139,11 @@ textarea
       margin-top: 36px
       margin-bottom: 60px
 
+      @media screen and (max-width: 1200px)
+         margin: 12px 0 24px
+         width: 100%
+         text-align: center
+
    .button
       color: #ffffff
       font-family: "Open Sans"
@@ -116,50 +151,131 @@ textarea
       font-size: 18px
       line-height: 34.06px
 
+      @media screen and (max-width: 1200px)
+         margin: 0 auto
+         display: block
+
    .main-video
       width: 551px
       height: 356px
-      background-color: rgba(0, 0, 0, .2)
-      box-shadow: -3px -8px 30px rgba(0, 0, 0, .2)
       cursor: pointer
+      overflow: hidden
+      position: relative
+      z-index: 5
+      transition: all .5s
 
+      @media screen and (max-width: 1200px)
+         width: 100%
+         height: 280px
+         margin-top: 44px
+
+      &::before 
+         content: ''
+         display: block
+         position: absolute
+         box-shadow: -3px -8px 30px rgba(0, 0, 0, .2)
+         background-color: rgba(0, 0, 0, .5)
+         top: 0
+         right: 0
+         z-index: 8
+         height: 100%
+         width: 100%
+      
+
+      div
+         position: absolute
+         top: 0
+         right: 0
+         z-index: 10
+         height: 100%
+         width: 100%
+         display: flex
+         justify-content: center
+         align-items: center
+
+         img 
+            height: 70px
+            width: 70px
+
+      img
+         width: 100%
+
+      &:hover
+         transform: scale(1.05)
+
+         
 // Особенности
 .features
-   
    .container
       padding: 100px 0
       border-bottom: 2px solid #ececec
+
+      @media screen and (max-width: 1200px)
+         padding: 60px 15px 40px
+
+         h4 
+            text-align: center
+            margin-top: 8px
 
    .h2
       display: inline-block
       font-family: 'Open Sans'
       font-weight: bold
-      font-size: 42px
-      text-transform: uppercase
+      font-size: 42px      
       color: rgba(0, 0, 0, .7)
+
+      @media screen and (max-width: 1200px)
+         text-align: center
+
+   .button
+      @media screen and (max-width: 1200px)
+         display: block
+         margin: 0 auto 
+         margin-bottom: 64px
    
    .text
       color: rgb(0, 0, 0)
       line-height: 1.75
       margin: 50px 0
+
+      @media screen and (max-width: 1200px)
+         margin: 12px 0 24px
+         text-align: center
    
    .descr
       opacity: .7
       margin-bottom: 50px
 
+      @media screen and (max-width: 1200px)
+         text-align: center
+   
    img
       display: inline-block
       margin-bottom: 30px
 
+      @media screen and (max-width: 1200px)
+         display: block
+         margin: 0 auto
+
 .my-productions
+   @media screen and (max-width: 1200px)
+      .row
+         padding: 0 16px 0 12px 
+
    .container
       padding: 100px 0 0 0
+
+      @media screen and (max-width: 1200px)
+         padding: 60px 0 0 0
       
       .sub-text
          width: 50%
          text-align: center
          margin-top: 15px
          margin-bottom: 27px
+
+         @media screen and (max-width: 1200px)
+            width: 100%
       
       .line
          width: 13%
@@ -168,18 +284,105 @@ textarea
       .tab-content
          margin-top: 40px
 
+         @media screen and (max-width: 1200px)
+            margin-top: 20px
+
       .project
          height: 200px
          width: 200px
-         background-color: #f5f0dd
+         background: #f5f0dd
          margin-bottom: 20px
-         // margin: 5px
+         overflow: hidden
+         border: 1px solid #c7c7c7
+         cursor: pointer
+
+         .site-screen
+            height: 100%
+            width: 100%
+
+            img 
+               height: 120%
+               transform: scale(1.02)
+
+         .mini-button
+            display: none
+            position: absolute
+            right: 64px
+            top: 32px
+            z-index: 10000
+            color: #737373
+            font-size: 24px
+
+         .site
+            display: none
+            color: #eee
+            height: 30%
+            padding: 24px
+            display: flex
+            flex-direction: column
+            padding-top: 60px
+            width: 100%
+            text-align: center
+            // margin-left: 30%
+
+            .desc
+               margin: 0 auto
+               width: 40%
+               text-align: center  
+
+               @media screen and (max-width: 1200px)
+                  width: 80%    
+            
+            h4 
+               margin-bottom: 0
+               font-weight: 600
+
+            .link 
+               margin-bottom: 6px
+
+            .price
+               margin-top: 12px
+               font-size: 24px
+               font-weight: 500
+            
+      .active-project 
+         position: fixed
+         top: 0
+         right: 0
+         border: none
+         height: 100%
+         width: 100%
+         background: rgba(0, 0, 0, .85)
+         z-index: 999
+         display: flex
+         justify-content: center
+         align-items: center
+         flex-direction: column-reverse
+         border: none
+
+         .site-screen
+            overflow: hidden   
+            overflow-y: auto 
+            width: 100%
+            height: 70%
+            transform: scale(1)
+
+            img 
+               height: auto
+               width: 100%
+         
+         .site,.mini-button
+            display: block
 
       .nav-tabs
          border: none
 
+         @media screen and (max-width: 1200px)
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+
          .nav-link
-            text-transform: uppercase
             opacity: 0.7
             color: #000000
             font-family: 'Open Sans Semibold'
@@ -190,38 +393,50 @@ textarea
       .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active
          color: $ColorRed
          background-color: transparent
-         text-transform: uppercase
+         // 
          opacity: 1
       
       .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover
          border-color: transparent transparent transparent
 
-      #all
-         .project
-            background-color: #5B1A1A
+      // #all
+      //    .project
+      //       background-color: #5B1A1A
 
-      #print-template
-         .project
-            background-color: #8522B8
+      // #print-template
+      //    .project
+      //       background-color: #8522B8
       
-      #web-template
-         .project
-            background-color: #85B8B8
+      // #web-template
+      //    .project
+      //       background-color: #85B8B8
       
-      #user-interface
-         .project
-            background-color: #41A041
+      // #user-interface
+      //    .project
+      //       background-color: #41A041
       
-      #mock-up
-         .project
-            background-color: #A04141
+      // #mock-up
+      //    .project
+      //       background-color: #A04141
 
 .our-team
    padding-top: 140px
    margin-bottom: 100px
 
+   @media screen and (max-width: 1200px)
+      padding-top: 60px
+      margin-bottom: 80px
+
+   .name
+      margin: 0 auto
+      display: block
+      width: 100%
+
    .sub-text
       width: 50%
+
+      @media screen and (max-width: 1200px)
+         width: 100%
    
    .line
       margin-bottom: 60px
@@ -233,26 +448,52 @@ textarea
       background-color: #f5f0dd
       overlay: none
 
+      @media screen and (max-width: 1200px)
+         width: 200px
+         height: 200px
+         overflow: hidden
+         margin: 0 auto
+         margin-bottom: 12px
+
       img
          height: 100%
          width: 100%
+
+         @media screen and (max-width: 1200px)
+            height: auto
    
    .text-decr-man
       .name
-         text-transform: uppercase
          font-size: 30px
          color: rgba(0, 0, 0, 0.8)
          font-family: 'Open Sans Semibold'
+         @media screen and (max-width: 1200px)
+            text-align: center
 
       .sub-text
          width: 90%
          margin-top: 20px
          margin-bottom: 50px
 
+         @media screen and (max-width: 1200px)
+            margin: 0 0 24px 0 
+            text-align: center
+            width: 90%
+            margin: 0 auto
+
    .social
+      @media screen and (max-width: 1200px)
+         padding: 24px 0 0 0 
       ul
          margin: 0
          padding: 0
+
+         @media screen and (max-width: 1200px)
+            margin-bottom: 24px
+            width: 100%
+            display: flex
+            justify-content: space-between
+            padding: 0 24px
 
          li
             display: inline-block
@@ -261,6 +502,10 @@ textarea
             font-style: italic
             font-size: 18px
 
+            @media screen and (max-width: 1200px)
+               margin-right: 0
+               display: inline-flex
+
             a
                color: rgba(0, 0, 0, .8)
 
@@ -268,24 +513,47 @@ textarea
                   font-family: 'Open Sans Bold'
    
    .ofther-people
-      .avatar-mini
-         height: 200px
-         background-color: #f5f0dd
-         cursor: pointer
-         background: url(../img/people/min-avatar.jpg) center no-repeat
-         background-size: cover
+      @media screen and (max-width: 1200px)
+         .col-6
+            right: 0
+            &:nth-child(1), &:nth-child(2)
+               margin-bottom: 24px
+               
 
       &__name
+         position: absolute
+         z-index: 12
+         bottom: 0
+         left: 0
          display: flex
          justify-content: center
-         text-transform: uppercase
-         font-size: 18px
+         font-size: 14px
          color: #fff
          width: 100%
          text-align: center
          padding: 5px 0
-         background-color: rgba(0, 0, 0, .5)
-         display: none
+         background-color: #000
+
+         @media screen and (max-width: 1200px)
+            font-size: 16px
+            padding: 8px 0
+      
+      .avatar-mini
+         height: 200px
+         position: relative
+         z-index: 100
+         background-color: #f5f0dd
+         cursor: pointer
+         overflow: hidden
+         width: 100%
+
+         img
+            width: 100% 
+
+            @media screen and (max-width: 1200px)
+               width: 100%
+               margin-bottom: -60px        
+
 
 // Поиск работ
 .search-projects
@@ -293,42 +561,81 @@ textarea
    z-index: 2
    padding: 100px 0 140px 0
 
+   @media screen and (max-width: 1200px)
+      padding: 60px 0 80px
+
+   &-bg
+      position: absolute
+      top: 0
+      right: 0
+      height: 100%
+      width: 100%
+      overflow: hidden
+
+      img 
+         position: absolute
+         top: -10%
+         left: -10%
+         width: 120% 
+         -webkit-filter: blur(5px)
+         -moz-filter: blur(5px)
+         -o-filter: blur(5px)
+         -ms-filter: blur(5px)
+         filter: blur(5px)
+         filter: brightness(50%)
+
+         @media screen and (max-width: 1200px)
+            width: 200%
+
    .container
       position: relative
       z-index: 2
 
-   .bg-search
-      position: absolute
-      z-index: 1
-      background: #2C2C2C url("../img/bg-search.jpg") no-repeat center
-      background-size: cover
-      filter: blur(2px)
-      left: -10px
-      right: -10px
-      top: -10px
-      bottom: -10px
-
    .title
       font-size: 42px
-      color: rgba(255, 255, 255, 0.8)
+      color: rgb(255, 255, 255)
       font-family: 'Open Sans Bold'
       text-align: center
+
+      @media screen and (max-width: 1200px)
+         line-height: 106%
+         font-size: 32px
+         width: 90%
    
    .sub-text
       color: rgba(255, 255, 255, 0.8)
       display: inline-block
       margin: 20px 0 40px 0
-   
+
+      @media screen and (max-width: 1200px)
+         width: 90%
+         text-align: center
+
+
+   @media screen and (max-width: 1200px)
+      .search-input
+         width: 90%
+         display: flex
+         align-items: center
+         flex-direction: column
+
    .input
       margin-right: 15px
+      @media screen and (max-width: 1200px)
+         margin: 0 0 12px 0
+         width: 100%
+
+      
    
    .button
-      text-transform: uppercase
       font-family: 'Open Sans Bold'
 
 // Написать письмл
 .message
    padding: 100px 0
+
+   @media screen and (max-width: 1200px)
+      padding: 60px 0
 
    .line
       display: inline-block
@@ -337,6 +644,10 @@ textarea
    .input
       width: 300px
       margin-bottom: 40px
+      
+      @media screen and (max-width: 1200px)
+         width: 100%
+         margin-bottom: 12px
 
       &-o
          margin-left: -5px
@@ -347,25 +658,32 @@ textarea
    
    .textarea
       border: none
-      border-radius: 5px
+      border-radius: 12px
       height: 255px
       width: 100%
       padding: 25px 30px 
       margin-bottom: 40px
       background-color: #e5e5e5
 
+      @media screen and (max-width: 1200px)
+         margin-bottom: 12px
+         height: 200px
+
       &:hover, &:focus
          background-color: #e5e5e5
          outline: none
    
    .button
-      text-transform: uppercase
+      // 
       display: inline-block
       width: 100%
 
       &:hover
          transform: scale(1.05)
-   
+.container-coonect
+   @media screen and (max-width: 1200px)
+      margin-top: 60px
+
    .connect
       display: inline-block
       max-width: 100%
@@ -373,16 +691,22 @@ textarea
       background-color: #2d2d2d
       padding: 0 60px
 
+      @media screen and (max-width: 1200px)
+         width: 100%
+
       &__text
          display: inline-block
          margin: 45% 0
          color: #b8b8b8
       
+         @media screen and (max-width: 1200px)
+            margin: 12% 0
+
       .title
          font-size: 18px
-         text-transform: uppercase
+         
       
-      .title, .address, .email, .tel,
+      .title, .address, .email, .tel
          display: inline-block
          margin: 5px 0
 
@@ -394,6 +718,17 @@ textarea
    background-color: #313030
    padding: 20px
    color: #b8b8b8
+
+   @media screen and (max-width: 1200px)
+      & .row .my-row-block 
+         display: flex
+         flex-direction: column
+
+      & .social
+         flex-direction: row
+         display: flex
+         gap: 12px
+         margin-top: 24px
 
    img
       margin: 0 5px
