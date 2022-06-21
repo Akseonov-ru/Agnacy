@@ -214,39 +214,16 @@ textarea {
   z-index: 5;
   transition: all 0.5s;
 }
+.main .main-video video {
+  height: 100%;
+  width: 100%;
+}
 @media screen and (max-width: 1200px) {
   .main .main-video {
     width: 100%;
     height: 280px;
     margin-top: 44px;
   }
-}
-.main .main-video::before {
-  content: "";
-  display: block;
-  position: absolute;
-  box-shadow: -3px -8px 30px rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.5);
-  top: 0;
-  right: 0;
-  z-index: 8;
-  height: 100%;
-  width: 100%;
-}
-.main .main-video div {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 10;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main .main-video div img {
-  height: 70px;
-  width: 70px;
 }
 .main .main-video img {
   width: 100%;
